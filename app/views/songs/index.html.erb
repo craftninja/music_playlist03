@@ -1,0 +1,5 @@
+<%= link_to 'Add new song', new_song_path %>
+<hr>
+<% @songs.each do |song| %>
+  <p><%= song[:title] %> | <%= song[:url] %></p>
+<% end %>
