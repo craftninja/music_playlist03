@@ -16,4 +16,8 @@ class SongsController < ApplicationController
     redirect_to songs_path
   end
 
+  def show
+    @song = Song.find(params[:id])
+  end
+
 end
